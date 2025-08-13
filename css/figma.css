@@ -33,38 +33,68 @@ p {
     text-align: center;
     line-height: 1;
     letter-spacing: 0.5px;
+    
 }
 
-.all-container img {
-    display: flex;
-    flex-direction: column;
+.all-container {
+   background-color;
+   display: flex;
+   flex-direction: column;
     gap: 90px;
+   
     /* 메인축으로의 정렬 */
     justify-content: center;
     /* 교차축으로의 정렬 */
     align-items: center;
+    
+    padding: 200px 0 70px;
+    margin: auto; /* top 좌우 bottom*/
 }
 
-
-.login {
+.slogan-container img {
     display: flex;
-    font-style: white;
-    width: 283px;
-    height: 42px;
-    border: 3px solid ;
-    text-align: center;
-    align-items: center;
-    border-radius: 8px;
-    color: 1e1e1e;
+    min-width: 272px;
+
+    margin-bottom: 38px;
+}
+
+.Link-container {
+    background-color:
+    display: flex;
+    flex-direction: column;/* 상하 */
+    gap: 20px;
+    
 
 }
-.signup {
-    display: flex;
-    font-style: white;
-    width: 283px;
+
+.Link-container a {
+    width: 272px;
     height: 42px;
-    border: 3px solid white;
-    text-align: center;
-    align-items: center;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    
+}
+
+.Link-container a:first-child {
+    background-color: #1e1e1e;
+
+}
+
+.Link-container a:last-child {
+    border: 2px solid white;
+}
+
+a {
+   color: inherit; /* 부모 색상 상속 */
+   text-decoration: none; 
+}
+
+.Link-container a:hover {
+    color: gold;
 }
