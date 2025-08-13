@@ -20,7 +20,7 @@ body {
 
 }
 
-img {
+.figma-box img {
     width: 90px;
    
 }
@@ -31,4 +31,35 @@ p {
     text-align: center;
     line-height: 1;
     letter-spacing: 0.5px;
+}
+
+.all-container img {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    /* 메인축으로의 정렬 */
+    justify-content: center;
+    /* 교차축으로의 정렬 */
+    align-items: center;
+}
+
+
+article { 
+    color: 1e1e1e;
+}
+.login {
+    width: 283px;
+    height: 42px;
+    border: 3px solid ;
+    text-align: center;
+    border-radius: 8px;
+    color: 1e1e1e;
+
+}
+.signup {
+    width: 283px;
+    height: 42px;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 8;
 }
