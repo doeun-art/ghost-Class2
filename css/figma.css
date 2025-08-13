@@ -16,7 +16,7 @@ body {
     /* 메인축으로의 정렬 */
     justify-content: center;
     /* 교차축으로의 정렬 */
-    align-items: flex-end;
+    align-items: center;
 
 }
 
