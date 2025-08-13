@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button, a {
+            background-color: blue;
+            color: #fff;
+            border-radius: 30px;
+            height: 48px;
+            width: 200px;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Hello Javascript</h1>
+    <button type="button" id="btn" > Click me!</button>
+    <button type="button" id="btn2"> 원래색으로 되돌리기 </button>
+    <a href="#">A tag</a>
+
+<script>
+    const h1 =  document.getElementById('title');
+    const btn = document.getElementById('btn');
+    const btn2 = document.getElementById('btn2');
+
+    h1.style.color = 'tomato'
+    btn.addEventListener('click', () => {
+        h1.style.color = 'olive'
+    })
+    btn2.addEventListener('click', () => {
+        h1.style.color = 'tomato'
+    })
+</script>
+</body>
+
+</html>

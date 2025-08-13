@@ -1,0 +1,32 @@
+@charset "UTF-8";
+      body {
+            background-color: #f3f3f3;
+            font-family: Tahoma;
+        }
+        h1 { color: #cf4f4f;}
+        h2 { color: #fff;}
+        h3 {text-decoration: underline;}
+        h4 {
+            width: 200px;
+            text-align: center;
+            color: #ffd3d9;
+            background-color: #5d41aa;
+        }
+
+        h5 {
+            font-weight: 900;
+        }
+
+        h6 {
+            font-weight: 100;
+        }
+
+        h1,h2,h3 { font-size: 30px;}
+        h4,h5,h6 { font-size: 16px;}
+
+        span { background-color: tomato;
+            color: gold;
+            width: 200px;
+            display: block;
+            text-align: center;}
+
