@@ -21,12 +21,12 @@
     height: 40px;
  }
 
-header {
+header option {
     background-image: url(../img/n_img/Netflix_lang_iogo.svg);
     background-repeat: no-repeat;
 }
 
-select {
+header select {
     display: flex;
     justify-content: flex-end;
     align-content: center;
