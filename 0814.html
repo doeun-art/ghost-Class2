@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0814</title>
     <style>
+        :root {
+            --primary:#d81e27;
+            --title:56px;
+
+        }
+
+        html {
+
+        }
+
         body {
             /*
             background-color: #a14fff;
@@ -18,6 +28,7 @@
             /*background: transparent none repeat left top/auto scroll;*/
             background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(52, 20, 79, 1) 20%, rgba(64, 27, 97, 1) 63%, rgba(0, 0, 0, 1) 100%);
             color: aliceblue;
+            font-size: 14px;
         }
         .thumb {
             width: 240px;
@@ -68,9 +79,27 @@
             background-repeat: no-repeat;
             background-position: right bottom;
         }
+
+        title {
+            color: var(--primary);
+            font-size: var(--title);
+        }
+
+        em {
+            font-size: 1rem;
+        }
+        i {
+            font-size: 1em;
+            /* font-size:100% */
+        }
     </style>
 </head>
-<>
+<body>
+
+    <em>Hello, World</em>
+    <i>World</i>
+    <hr>
+
     <div class="thumb">
         <img src="./img/toons/kosigi-wale.jpg" alt="kosigi">
     </div>
@@ -78,6 +107,8 @@
     <div class="thumb-ir">
         <span class="blind">illust image</span>
     </div>
+
+    <h1 class="title">Heading</h1>
 
     <section>
         <p>
