@@ -4,22 +4,31 @@
 
     background-image: url('../img/n_img/main.svg');
     background-repeat: no-repeat;
+    padding: 30px 148px;    
     
  }
 
- .top {
-    display: flex;
- }
+
 
  .header {
     display: flex;
+    justify-content: space-between;
+    
  }
 
-select {
+ header img {
+    width: 148px;
+    height: 40px;
+ }
+
+header {
     background-image: url(../img/n_img/Netflix_lang_iogo.svg);
     background-repeat: no-repeat;
+}
+
+select {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
     width: 100px;
     height: 30px;
@@ -28,15 +37,35 @@ select {
     color: white;
     border-radius: 5px;
     padding: 0 15px;
-
 }
 
-button {
+header button {
     width: 50px;
     height: 30px;
     background-color: red;
     color: white;
     border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+form button {
+    width: 200px;
+    height: 56px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.title {
+    margin: 50px;
 }
 
 .title1 {
@@ -62,4 +91,5 @@ input {
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
+    margin: 5px;
 }
