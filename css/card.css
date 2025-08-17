@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+    background-color: #dff1f3;
+    font-family: "popins", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.card-container {
+    border: 1px solid #bfd7e0;
+    background-color: #fff;
+    box-sizing: 0px 0px 20px #c9e2f4;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.card-container .thumbs {
+    background-color: lightcoral;
+    height: 260px;
+}
+
+.card-container .thumbs img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-container .contents {
+    background-color: #dff1f3;
+    padding: 26px;
+}
+
+.contents q {
+    color: #848484;
+    font-size: 11px;
+}
+
+.contents h2 {
+    font-size: 25px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.contents p {
+    font-size: 14px;
+}
+
+.contents em {
+    color: #60a1d0;
+}
+
+.writer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.writer em {
+    color: #60a1d0;
+}
+
+.writer img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.writer .user {
+    font-size: 11px;
+    display: block;
+}
+
+.writer .created {
+    font-size: 12px;
+    color: #848484;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card-container {
+    border: 2px solid black;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.horizon-box {
+    display: flex;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.horizon-box .thumbs {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#change-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #222;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+}

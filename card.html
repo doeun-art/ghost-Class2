@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layoute></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/card.css">
+</head>
+<body>
+    <h1>Card Layout</h1>
+    <section class="card-container horizon-box">
+        <div class="thumbs">
+            
+            <img src="./img/card_thumb_0.jpg" alt="space sea">
+        </div>
+        <div class="contents">
+            
+            <q>A line of code can create a whole new world, start now!</q>
+            <h2>CODING IS MORE FUN<br>THAN YOU THINK!</h2>
+            <p>
+                At first, coding seemed so hard, but it's really just like
+                stacking small blocks. <em>Making mistake is okay</em>
+                it's the start of learning!
+            </p>
+
+            <div class="writer">
+                <img src="./img/profile_0.jpg" alt="camel">
+                <div>
+                    <strong class="user">Created by Dedblangica</strong>
+                    <span class="Created">3minutes ago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button type="button" id="change-btn">모드바꾸기</button>
+    <script>
+        const cardBox = document.querySelector('.card-container');
+        const btn = document.getElementById('change-btn');
+        btn.addEventListener('click', () -> {
+            cardBox.classList.toggle('horizon-box')
+            let status = cardBox.classList.contains('horizon-box');
+            consol.log('현재상태는 : ', status, '입니다.')
+            if (status) {
+                btn.textContent = '세로모드보기'
+            } else {
+                btn.textContent = '가로모드보기'
+            }
+        })
+    </script>
+    
+
+</body>
+</html>

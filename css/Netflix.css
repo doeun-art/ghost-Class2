@@ -4,6 +4,8 @@
 
     background-image: url('../img/n_img/main.jpg');
     background-repeat: no-repeat;
+  
+    box-sizing: content-box;
     
  }
 
@@ -21,30 +23,40 @@
     height: 40px;
  }
 
-header option {
-    background-image: url(../img/n_img/Netflix_lang_iogo.svg);
-    background-repeat: no-repeat;
+. nav {
+    display: flex;
+    gap: 12px;
 }
 
 header select {
+    background-image: url(../img/n_img/Netflix_lang_iogo.svg);
+    background-repeat: no-repeat;
+    align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-content: center;
-    width: 100px;
-    height: 30px;
+    min-width: 124px;
+    height: 32px;
     background-color: #1c1c1c;
     border: 1px solid white;
     color: white;
-    border-radius: 5px;
-    padding: 0 15px;
+    border-radius: 8px;
+    padding: 0 36px;
+    font-size: 1rem;
 }
 
 header button {
-    width: 50px;
-    height: 30px;
+    height: 32px;
     background-color: red;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 0 36px;
+    min-width: 124px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
 }
 
 form {
