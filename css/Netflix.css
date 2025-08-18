@@ -9,6 +9,7 @@
     
  }
 
+ 
 
 
  .header {
@@ -23,7 +24,7 @@
     height: 40px;
  }
 
-. nav {
+.header nav {
     display: flex;
     gap: 12px;
 }
@@ -100,6 +101,7 @@ form div {
     color: white;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .title p {

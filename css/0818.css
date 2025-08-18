@@ -21,7 +21,7 @@ body {
 .thumb img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     
 }
 
@@ -36,29 +36,41 @@ body {
 
 .contents p {
     font-size: 15px;
+    margin: 0 1.02em;
+    text-align: justify;
 }
 
 .tag-container {
     display: flex;
+    
     gap: 5px;
     flex-wrap: wrap;
+    margin: 10px 0;
+    font-size: 0.8em;
 }
 
 .tag-container li a {
     background-color: gray;
+    
     width:fit-content;
     height: 30px;
     color: white;
     padding: 0px 20px;
     border-radius: 999px;
     display:flex;
+    align-items: center;
     gap: 10px;
     
     
 }
 
+.tag-container li a:before {
+    content: "#";
+    margin-right: 4px;
+}
 
-.tag-container li :hover { 
-   background-color: aquamarine;
+
+.tag-container li a:hover { 
+   background-color:rgba(0, 0, 0, 0.4);
    color: darkgreen;
 }
