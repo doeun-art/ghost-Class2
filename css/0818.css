@@ -9,15 +9,20 @@ body {
 
 .card-container {
     border: 1px solid black;
-    width: 300px;
+    width: 340px;
     border-radius: 20px;
     margin: 0 auto;
+}
+
+.thumb {
+    overflow: hidden;
 }
 
 .thumb img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    
 }
 
 .contents {
@@ -33,7 +38,7 @@ body {
     font-size: 15px;
 }
 
-.tag-container a {
+.tag-container li a {
     background-color: gray;
     width:fit-content;
     height: 30px;
@@ -41,6 +46,12 @@ body {
     padding: 0px 20px;
     border-radius: 999px;
     display:flex;
+    gap: 10px;
     
-    flex-wrap: wrap;
+    
+}
+
+.tag-container li :hover { 
+   background-color: aquamarine;
+   color: darkgreen;
 }
