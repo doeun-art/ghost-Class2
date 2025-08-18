@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 body {
-    background-color: white;
-    width: 340px;
     margin: 0 auto;
     font-weight: 300;
     font-family: sans-serif;
@@ -19,6 +17,7 @@ body {
 .thumb img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 .contents {
