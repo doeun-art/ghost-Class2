@@ -79,7 +79,7 @@ form button {
     height: 56px;
     background-color: red;
     border-radius: 5px;
-    color: white;
+    color: white; 
     font-size: 20px;
     margin: 5px;
 }

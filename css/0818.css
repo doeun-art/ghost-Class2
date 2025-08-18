@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+    width: 340px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-family: sans-serif;
+    
+}
+
+.card-container {
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.thumb img {
+    height: 100%;
+    width: 100%;
+}
+
+.contents {
+    background-color: white;
+    margin: 0 20px;
+}
+
+.contents strong {
+    font-size: 20px;
+}
+
+.contents p {
+    font-size: 15px;
+}
+
+.tag-container a {
+    background-color: gray;
+    width:fit-content;
+    height: 30px;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 999px;
+    display:flex;
+    
+    flex-wrap: wrap;
+}
