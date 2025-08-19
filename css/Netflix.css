@@ -4,7 +4,7 @@
 
     background-image: url('../img/n_img/main.jpg');
     background-repeat: no-repeat;
-  
+    background-size:cover;
     box-sizing: content-box;
     
  }
@@ -27,6 +27,11 @@
 .header nav {
     display: flex;
     gap: 12px;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
 }
 
 header select {
