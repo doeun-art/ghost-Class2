@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .tBox {
+            
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tBox th[scope='row'] {
+            background-color: rgb(238, 238, 238);
+        }
+        
+        .tBox th[scope='column'] {
+            background-color: rgb(75, 171, 255);
+            color: white;
+        }
+
+        .tBox td {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="tBox">
+        <caption>성적표</caption>
+        <colgroup>
+            <col style="width: 240px;">
+            <col style="width: ((100%-240%))/3;">
+            <col style="width: ((100%-240%))/3;">
+            <col style="width: ((100%-240%))/3;">
+            
+        
+        </colgroup>
+        <tbody>
+            <thead>
+                <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">국어</th>
+                    <th scope="col">영어</th>
+                    <th scope="col">수학</th>
+                </tr>
+            </thead>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Average</th>
+                <td>70</td>
+                <td>40</td>
+                <td>55</td>
+            </tr>
+        </tfoot>
+        <tr>
+            <th scope="row">탄지로</th>
+            <td>50</td>
+            <td>86</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <th scope="row">젠이츠</th>
+            <td>88</td>
+            <td>70</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th scope="row">손석구</th>
+            <td>35</td>
+            <td>86</td>
+            <td>97</td>
+        </tr>
+    </table>
+</body>
+</html>
