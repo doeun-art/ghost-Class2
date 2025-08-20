@@ -21,7 +21,7 @@
     
  }
 
- header img {
+ .header img {
     width: 148px;
     height: 40px;
  }
@@ -79,7 +79,8 @@ form p {
      display: flex;
     justify-content: center;
     color: white;
-    margin-top: 20px;
+    margin-top: 5px;
+    
 }
 
 form button {
@@ -99,22 +100,21 @@ form div {
 }
 
 .title {
-    margin: 50px;
+    margin: 0 auto;
 }
 
 .title1 {
     font-size: 56px;
     font-weight: bold;
-    color: white;
+    
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.title p {
+h2 {
     display: flex;
     justify-content: center;
-    color: white;
     margin-top: 20px;
 }
 
@@ -148,26 +148,29 @@ input {
     transition: 0.5s;
 }
 
-strong {
+.box1 strong {
     font-size: 20px;
     
 }
 .box1 p {
     
 }
-a {
+.box1 a {
     width: 140px;
     height: 40px;
     background-color: rgb(76, 76, 76);
     
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 24px;
 
 }
 
-a:hover {
+.box1 a:hover {
     background-color: #1c1c1c;
     transition: 0.5s;
 }
