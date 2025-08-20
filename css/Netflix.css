@@ -3,6 +3,7 @@
  body {
 
     background-image: url('../img/n_img/main.jpg');
+    width: 8;
     background-repeat: no-repeat;
     background-size:cover;
     box-sizing: content-box;
@@ -125,4 +126,38 @@ input {
     font-size: 20px;
     padding: 10px;
     margin: 5px;
+}
+
+.box1 {
+    width: 720px;
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+strong {
+    font-size: 20px;
+    color: white;
+}
+.box1 p {
+    color: white;
+}
+.txt-1 {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(76, 76, 76);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
 }
