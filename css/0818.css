@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     font-weight: 300;
     font-family: sans-serif;
+    height: 3000px;
     
 }
 
@@ -12,10 +13,12 @@ body {
     width: 340px;
     border-radius: 20px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .thumb {
-    overflow: hidden;
+    position: relative;
 }
 
 .thumb img {
@@ -25,6 +28,16 @@ body {
     
 }
 
+.card-container .dimm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 .contents {
     background-color: white;
     margin: 0 20px;
@@ -32,6 +45,7 @@ body {
 
 .contents strong {
     font-size: 20px;
+    margin: 0 0.7em;
 }
 
 .contents p {
@@ -73,4 +87,76 @@ body {
 .tag-container li a:hover { 
    background-color:rgba(0, 0, 0, 0.4);
    color: darkgreen;
+}
+
+button {
+    
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(95, 162, 255);
+    background-color: lightblue;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+
+}
+button img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    
+}
+
+button:hover {
+    scale: 1.1;
+    transition : 0.3s;
+    rotate: -45deg;
+    /*transform:scale(1.1) rotate(-45deg)*/
+}
+
+.btn-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    text-align: justify;
+    
+    background-color: tomato;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.dimm {
+    position: absolute;
+    /*left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;*/
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal {
+    z-index: 101;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    /*
+    left:calc(50%-150px)
+    top:calc(50%-150px)
+    */
+    left: 50%;
+    top: 50%;
+   
+    /* inset : 50% auto auto 50% */
+    transform : translate(-50%, -50%);
 }

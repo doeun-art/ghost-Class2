@@ -39,10 +39,7 @@
 header select {
     background-image: url(../img/n_img/Netflix_lang_iogo.svg);
     background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    background-position: 8px center ;
     min-width: 124px;
     height: 32px;
     background-color: #1c1c1c;
