@@ -129,7 +129,7 @@ input {
 .box1 {
     width: 720px;
     
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     
     margin: 70px auto;
     border-radius: 10px;
@@ -170,4 +170,93 @@ input {
 .box1 a:hover {
     background-color: #1c1c1c;
     transition: 0.5s;
+}
+
+.contents {
+    
+    margin: 20px 148px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contents h3 {
+    font-size: 24px;
+}
+
+.contents img {
+    width: 180px;
+    height: 252px;
+    object-fit:cover;
+    border-radius: 20px;
+    
+}
+
+.reason  {
+    margin: 20px 148px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.reason1 {
+    width: 291px;
+    height: 339px;
+    
+    background-color: rgb(7, 7, 56);
+    border-radius: 20px;
+    padding: 30px 20px ;
+    position: relative;
+    
+    
+}
+
+.Q h3 {
+    font-size: 24px;
+    margin: 20px 148px;
+
+}
+
+.reason1 h4 {
+    font-size: 24px;
+}
+
+.reason1 h5 {
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+.numb1 {
+    font-size: 120px;
+    color: #1c1c1c;
+    -webkit-text-stroke: 2px white;
+    font-weight: bold;
+     /* 글자 내부 색 */
+    position: absolute;
+    left:-25px;
+    bottom: 3px;
+    }
+
+.Q {
+     margin: 20px 148px;
+     display: flex;
+    flex-direction: column;
+    gap: 20px;
+     
+}
+
+.Q h3 {
+    font-size: 24px;
+}
+
+.Q button{
+    width: 1512px ;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4e4e4e;
+    margin: auto;
 }
