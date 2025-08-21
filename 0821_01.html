@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+        body {
+            background-color: #a2ddff;
+        }
+        .container {
+            width: 400px;
+            
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            box-shadow: 10px 10px 0.5px rgb(60, 173, 218);
+            padding: 40px ;
+        }
+
+        form {
+            margin: 0 auto;
+            
+        }
+
+        fieldset {
+        
+        }
+        input {
+            width: 300px;
+            
+            background-color: ;
+            border: 2px solid darkblue;
+            
+            padding: 10px 40px;
+            background-image: url(./img/icons/search.svg);
+            background-repeat: no-repeat;
+            
+            display: flex;
+            gap: 5px;
+            
+        }
+
+        button {
+            width: 300px;
+            height: 40px;
+            background-color: lightblue;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        a {
+            font-size: 13px;
+            display: flex;
+            justify-content: flex-end;
+            color: gray;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+             <fieldset>
+                 <legend>검색</legend>
+                 <input type="search" 
+                 placeholder="Search Here"
+                 required>
+                 <button type="submit">
+                     Search
+                 </button>
+             </fieldset>
+             <a href="./0820.html">Advanced Search</a>
+        </form>
+    </div>
+</body>
+</html>
