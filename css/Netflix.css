@@ -6,131 +6,119 @@
    
     background-repeat: no-repeat;
     background-size:cover;
-    box-sizing: content-box;
+    box-sizing: 100%;
     color: white;
     
  }
 
- 
+ .page-header {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0,0,0,1) 0%,
+        rgba(46,22,28,0) 100%
+    );
+ }
 
-
- .header {
+ .page-header .inner {
+    width: 100%;
+    max-width: 1290%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 30px 148px;    
-    
+    height: 88px;
+    align-items: center;
+    padding: 0 1.25rem;
  }
 
- .header img {
+ .page-header h1 {
     width: 148px;
-    height: 40px;
  }
 
-.header nav {
+.nav {
     display: flex;
     gap: 12px;
 }
 
-.nav {
-    display: flex;
-    gap: 10px;
+.nav select,
+.nav button {
+    height: 32px;
+    border-radius: 8px;
+    padding: 0 36px;
+    min-width: 124px;
+    font-size: 1rem;
 }
 
-header select {
+.nav select {
+    border: 1px solid #fff;
+    padding-left: 30px;
     background-image: url(../img/n_img/Netflix_lang_iogo.svg);
     background-repeat: no-repeat;
-    background-position: 8px center ;
-    min-width: 124px;
-    height: 32px;
-    background-color: #1c1c1c;
-    border: 1px solid white;
-    color: white;
-    border-radius: 8px;
-    padding: 0 36px;
-    font-size: 1rem;
+    background-position: 12px center ;
+    margin: 20px auto;
 }
 
-header button {
-    height: 32px;
+.nav button {
     background-color: red;
-    color: white;
-    border-radius: 8px;
-    padding: 0 36px;
-    min-width: 124px;
-    font-size: 1rem;
 }
 
-button {
-    cursor: pointer;
-}
-
-form {
+.onbording {
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
     flex-direction: column;
-    
-}
-
-form p {
-     display: flex;
+    align-items: center;
     justify-content: center;
-    color: white;
-    margin-top: 5px;
-    
-}
-
-form button {
-    width: 200px;
-    height: 56px;
-    background-color: red;
-    border-radius: 5px;
-    color: white; 
-    font-size: 20px;
-    margin: 5px;
-}
-
-form div {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.title {
     margin: 0 auto;
+    gap: 20px;
 }
 
-.title1 {
-    font-size: 56px;
-    font-weight: bold;
-    
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.onbording h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.25;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.onbording p {
+    font-size: 22px;
+    margin-bottom: 1rem;
 }
 
-input {
-    width: 350px;
+.input-container {
     height: 56px;
-    background-color: #1c1c1c;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
 }
 
-.box1 {
-    width: 720px;
-    
+.input-container input,
+.input-container button {
+    border-radius: 8px;
+    padding: 0 1.25rem;
+}
+
+.input-container input {
+    flex-grow: 1;
+}
+
+.input-container button {
+    background-color: red;
+    font-size: 1.25rem;
+}
+
+/* main */
+
+.page-main {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.banner {
+    border-radius: bold;/**/
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
     margin: 70px auto;
     border-radius: 10px;
     padding: 12px 24px;
@@ -140,146 +128,128 @@ input {
     position: relative;
 }
 
-.box1:hover {
+.banner:hover {
     scale: 1.1;
     transition: 0.5s;
 }
 
-.box1 strong {
-    font-size: 20px;
-    
+.banner h3 {
+    font-size: 1.25rem;
 }
-.box1 p {
-    
+
+.banner h3 em {
+    font-size: 600;
 }
-.box1 a {
-    width: 140px;
-    height: 40px;
-    background-color: rgb(76, 76, 76);
-    
-    border-radius: 5px;
+
+.banner a {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(76, 76, 76);
+    padding: 0.5rem 1.5rem;
     position: absolute;
-    right: 24px;
-
+    right: 30px;
+    top: 50%;
+    translate: 0 -50%;
+    transition: 0.4s;
 }
 
-.box1 a:hover {
+.banner a:hover {
     background-color: #1c1c1c;
-    transition: 0.5s;
 }
 
-.contents {
+/* 지금 뜨는 컨텐츠 */
+
+.page-main .contents-container {
+    margin : 2rem 0;
+}
+
+.page-main .contents-container h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.contents-container ol {
     display: flex;
-    position: relative;
-    gap: 1px;
+    gap: 22px;
+    overflow: auto;
 }
 
-.contents h3 {
-    font-size: 24px;
-    
-}
-
-.contents {
-    margin: 20px 148px;
-    gap: 10px;
-}
-
-.contents img {
-    width: 180px;
-    height: 252px;
-    object-fit:cover;
-    border-radius: 20px;
-    
-    
-    
-}
-
-h3 {
-    margin: 20px 148px;
-}
-
-.reason  {
-    margin: 20px 148px;
+.contents-container header {
     display: flex;
-    gap: 20px;
-    
-}
-
-.reason1 {
-    width: 291px;
-    height: 339px;
-    
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    padding: 30px 20px ;
-    
-    
-    
-}
-
-.Q h3 {
-    font-size: 24px;
-    
-    
-
-}
-
-.reason1 h4 {
-    font-size: 24px;
-}
-
-.reason1 h5 {
-    font-size: 16px;
-    margin-top: 20px;
-    
-}
-
-.numb1 {
-    font-size: 120px;
-    color: #1c1c1c;/* 글자 내부 색 */
-    -webkit-text-stroke: 2px white;
-    font-weight: bold;
-     
-    position: absolute;
-    left:10px;
-    bottom: 3px;
-    }
-
-    .numb2 {
-    font-size: 120px;
-    color: #1c1c1c;/* 글자 내부 색 */
-    -webkit-text-stroke: 2px white;
-    font-weight: bold;
-     
-    position: absolute;
-    left:200px;
-    bottom: 3px;
-    }
-
-.Q {
-     margin: 20px 148px;
-     display: flex;
-    flex-direction: column;
-    gap: 20px;
-     
-}
-
-.Q h3 {
-    font-size: 24px;
-}
-
-.Q button{
-    max-width: 1512px ;
-    padding: 20px;
-    font-size: 24px;
-    display: flex;
-    gap: auto;
-    align-items: center;
     justify-content: space-between;
-    background-color: #4e4e4e;
-    margin: auto;
+    align-items: center;
+}
+
+.contents-container .page-container {
+    display: flex;
+    gap: 20px;
+}
+
+.contents-container .page-container button.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.contents-container li {
+    width: 200px;
+    height: 252px;
+    flex-shrink: 0;
+    position: relative;
+    padding-left: 1.25rem;
+
+}
+
+.contents-container li a {
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+}
+
+.contents-container li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contents-container .num {
+    position: absolute;
+    font-size: 100px;
+    color: #000;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke: 4px #fff;
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    inset: auto auto 0 0;
+    font-weight: 900;
+}
+
+.contents-container .num::before {
+    content: attr(data-rank);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+    position: absolute;
+    inset: 0 auto auto 0;
+}
+
+.reason-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.reason-container ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.reason-container li {
+   max-width: 1512px;
+    height: 200px;
+    outline: 1px solid gold;
+    background: url("../img/icons/sns_facebook.png") no-repeat right 10px bottom 15px/40px auto;
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".//css/reset.css">
+    <style>
+        .terms-container {
+            height: 200px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 12px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .terms-container p {
+            line-height: 1;
+            font-size: 12px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <select>
+        <option value="ko">한국어</option>
+        <option value="English">English</option>
+        <option value="Jp">日本语</option>
+    </select>
+    <select>
+        <option>2000</option>
+        <option selected value="2001">2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+    </select>
+
+    <select name="">
+        <optgroup label="서울시">
+            <option>구로구</option>
+            <option>금천구</option>
+            <option>강서구</option>
+            <option>동작구</option>
+            <option>서초구</option>
+            <option>양천구</option>
+        </optgroup>
+        
+        <optgroup label="부산시">
+            <option>사하구</option>
+        </optgroup>
+
+        <optgroup label="제주도">
+            <option>제주시</option>
+            <option>서귀포시</option>
+        </optgroup>
+    </select>
+
+    <hr>
+    <textarea readonly disabled> <!--읽기 전용-->
+        <!--textarea안에는 마크업X-->
+        공백병합현상이 일어나지 않는다.
+        다양한 네이버 서비스를 즐겨보세요.
+        네이버는
+        <a href="http://www.naver.com"
+        target="_blank">
+        www.naver.com
+        </a>
+    </textarea>
+
+    <div class="terms-container">
+        <h3>다양한 네이버 서비스를 즐겨보세요.</h3>
+        <p>
+            네이버는
+            <a href="http://www.naver.com"
+            target="_blank">
+            www.naver.com
+            </a>
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, 
+            magni, totam suscipit assumenda rerum necessitatibus, quae illo dolore 
+            illum consectetur deleniti? Rerum, temporibus. Eos sit ullam 
+            consectetur tempora excepturi dolor?
+        </p>
+    </div>
+
+    <div class="phone-check">
+        <input type="tell" required placeholder="'-'없이 숫자만 입력하세요.">
+        <button type="button" disabled>인증요청</button>
+        <hr>
+        <input type="text" disabled placeholder="인증번호 6자리">
+    </div>
+
+    <hr>
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.6">60%</meter>
+</body>
+</html>

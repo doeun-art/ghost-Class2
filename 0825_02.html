@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver</title>
+</head>
+<body>
+    <h1><a href="naver">네이버</a></h1>
+    <form name="auth">
+        <label>
+            <input type="checkbox">
+            <span>실명 인증된 아이디로 가입</span>
+        </label>
+
+            <input type="text" placeholder="아이디" required> @naver.com <br>
+            <input type="password" placeholder="비밀번호" required>
+            <button type="button">비밀번호 보기</button>
+        <br>
+        <p>
+            <label for="user-email">[선택]</label>
+            <input type="email" id="user-email">
+        </p>
+
+        <input type="text" name="user-name" placeholder="이름" required>
+        <input type="text" name="user-birth" placeholder="생년월일 8자리" maxlength="8" required>
+
+        <input type="text" placeholder="[선택] 이메일주소 (비밀번호)"> <br>
+    </form>
+
+    <div class="box2">
+        <input type="name" placeholder="이름"> <br>
+        <input type="birth" placeholder="생년월일 8자리"> <br>
+        <button type="button">통신사 선택</button>
+        <input type="button" value="통신사 선택">
+    </div>
+
+    <div class="box3">
+        <ul>
+            <li>SKT</li>
+            <li>SKT 알뜰폰</li>
+            <li>KT</li>
+            <li>KT 알뜰폰</li>
+            <li>LG U+</li>
+            <li>LG U+ 알뜰폰</li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="radio" name="jender" id="man" checked>
+                <label for="man">남자</label>
+            <li>
+                <input type="radio" name="jender" id="woman">
+                <label for="woman">여자</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="radio" name="korean" id="korean-y" checked>
+                <label for="korean-y">내국인</label>
+            </li>
+
+            <li>
+                <input type="radio" name="korean" id="korean-n">
+                <label for="korean-n">외국인</label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

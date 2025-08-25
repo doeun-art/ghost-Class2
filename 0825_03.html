@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>FAQ</h2>
+    <div class="faq-list">
+        <details open>
+            <summary>
+                넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
+            </summary>
+            <div>
+                <p>
+                    넷플릭스는 장편 영화, 다큐멘터리, 시리즈, 애니메이션, 각종 상을 
+                    수상한 넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다. 
+                    마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수 있습니다.
+                </p>
+                <a href="#">넷플릭스 콘텐츠 살펴보기</a>
+            </div>
+        </details>
+    </div>
+
+    <label for="compus-title">과목선택</label>
+    <input type="text" placeholder="과목선택" list="campus-subject2" id="campus-title">
+    <datalist id="campus-subject">
+        <option>HTML</option>
+        <option>css</option>
+        <option>JAVASCRIPT</option>
+    </datalist>
+<br>
+    datalist에서는 option 태그의 value 속성만 존재해도 무방하나,
+    select 태그에서는 반드시 option 태그를 종료해줘야한다. 
+
+    <datalist id="campus-subject2">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JAVASCRIPT">
+    </datalist>
+</body>
+</html>
