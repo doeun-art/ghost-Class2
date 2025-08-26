@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        .container {
+            background-color: gold;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            /*
+            position : static(offset 속성 적용불가)
+
+            offset속성 : left, top, right, bottom
+            position : relative,
+            무조건 나를 기준으로 함. 자리를 지킴.
+
+            position : absolute,
+            floating button : z축으로 떠있는 요소
+            부모나, 조상중에 position이 staic이 아닌 가장 가까운 요소를 기준으로 함.
+
+            position : fixed,
+            floating button : z축으로 떠있는 요소
+            무조건 body를 기준으로 하고, 스크롤이 되지 않음.
+
+            position : sticky
+            */
+            
+        }
+
+        
+        .child-container {
+            width: 200px;
+            height: 200px;
+            background:url('./img/card_thumb_1.jpg') no-repeat center center/cover;
+            position: relative;
+            
+        }
+
+        .ghost1 {
+             /*relative*/
+            right: 0;
+            top: 0;
+        }
+        
+        .ghost2 {
+            position: fixed; /*무조건 문서*/
+            right: 40px;
+            bottom: 40px;
+        }
+
+        button {
+            background-color: pink;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            /* top:calc(50% - 25px); */
+            top: 59%;
+            
+        }
+
+        .prev {
+            left: 0;
+            translate: -50% -50%;
+            
+        }
+
+        .next {
+            right: 0;
+            translate: 50% -50%;
+        }
+
+        .child-container:hover .full {
+            background-color: rgba(54, 148, 241, 0.5);;
+        }
+
+        .full {
+            background-color: rgba(54, 148, 241, 0);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container">
+            <img src="./img/ghost_n1.png" alt="" class="ghost1">
+            <img src="./img/ghost_n1.png" alt="" class="ghost2">
+
+            <div class="full">HELLO</div>
+        </div>
+        <button type="button" class="prev">이전</button>
+        <button type="button" class="next">다음</button>
+    </div>
+
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nostrum blanditiis culpa sint minima. Amet nobis molestias, 
+        voluptate accusantium dicta rerum officiis maiores asperiores 
+        necessitatibus non, ipsum id nihil nisi ab?
+    </p>
+</body>
+</html>

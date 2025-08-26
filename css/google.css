@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /* background-image: url("../images/full_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  /* 축약형 */
+  background: url("../img/bg.jpg") no-repeat fixed center center/cover;
+  color: #fff;
+  font-family: sans-serif;
+  
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background-image:url("../img/sns-icon-2024-svg/naver-1.svg");
+    
+}
+
+.site-list a {
+    
+    bor
+}
+

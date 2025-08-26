@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            max-width: 1032px;
+            width: 100%;
+            margin: 50px auto;
+            padding: 0 1rem;
+            /* 1rem -> 16px */
+            border: 1px solid;
+            outline: blue;
+        }
+
+        ul {
+            outline: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        li {
+            background-color: purple;
+            width: calc((100% - 30px) / 4);
+            flex-shrink: 0;
+            /* flex-grow, flex-shrink, flex-basis */
+        }
+
+        li:nth-child(3n-1) {
+            /* 2, 5, 8 */
+            background-color: brown;
+        }
+
+
+        @media all and (max-width:1200px) {
+            /* 1200px 이하에서는...*/
+            body {
+                background-color: tomato;
+            }
+        }
+        @media all and (max-width:1024px) {
+            body {
+                background-color: pink;
+            }
+        }
+        @media all and (max-width:764px) {
+            body {
+                background-color: gold;
+            }
+        }
+        @media all and (max-width:480px) {
+            body {
+                background-color: orange;
+            }
+        }
+        @media all and (max-width:375px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        /* break-point : 764, 480, 375 */
+
+    </style>
+</head>
+
+<body>
+    <h1>Responsible web site</h1>
+    <div class="container">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+    </div>
+</body>
+</html>
