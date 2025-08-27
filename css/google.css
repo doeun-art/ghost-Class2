@@ -4,7 +4,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  
 }
 
 body {
@@ -20,15 +20,170 @@ body {
   
 }
 
-.icon {
-    width: 48px;
-    height: 48px;
-    background-image:url("../img/sns-icon-2024-svg/naver-1.svg");
-    
+a,
+button {
+  transition: 0.4s;
+}
+
+.gnb .list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  font-size: 12px;
+}
+
+.gnb a:hover {
+  text-decoration: underline;
+}
+
+.gnb .btn-lab,
+.gnb .btn-menu,
+.gnb .btn-mypage {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 24px auto;
+}
+
+.gnb .btn-lab {
+  background-image: url("../img/icon/lab_wt.svg");
+  background-size: 20px auto;
+}
+
+.gnb .btn-menu {
+  background-image: url("../img/icon/vento_wt.svg");
+}
+
+.gnb .btn-mypage {
+  background-color: #fff;
+  background-image: url("../img/gum.png");
+  background-size: cover;
+}
+
+.gnb .btn-lab:hover,
+.gnb .btn-menu:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.gnb .btn-mypage:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 746px;
+  margin: 3rem auto 0;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-container h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 검색 */
+
+.search-container {
+  background: #fff url("../img/icons/search.svg") no-repeat
+  8px center/24px auto;
+  border-radius: 50px;
+  padding: 0 20px 0 36px;
+  display: flex;
+  align-items: center;
+  margin: 8px center;
+}
+
+.search-container form {
+  flex-grow: 1; /* figma의 fill-container와 동일 */
+}
+
+.search-container .input {
+  width: 100%;
+  height: 48px;
+  border: none;
+}
+
+.search-container .other-search {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container .other-search button {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 21px auto;
+  
+}
+
+.search-container .other-search .voice {
+  background-image: url("../img/icon/voice.svg");
+}
+
+.search-container .other-search .lens {
+  background-image: url("../img/icon/lens.svg");
+}
+
+/* 자주 방문하는 사이트 */
+
+.site-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* width:100%; */
 }
 
 .site-list a {
-    
-    bor
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 112px;
+  justify-content: center;
+  
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 13px;
+  text-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+
+.site-list li {
+  width: 112px;
+  position: relative;
+}
+
+.site-list li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.site-list a .icon {
+  background-image: url("../img/sns-icon-2024-svg/naver-1.svg") no-repeat;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+
+}
+
+.site-list .btn-more {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/meatball_wt.svg") no-repeat;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+}

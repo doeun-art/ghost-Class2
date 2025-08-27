@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+        @media all and (max-width:1200px) {
+            /* 1200px 이하에서는...*/
+            body {
+                background-color: tomato;
+            }
+
+        }
+        @media all and (max-width:1024px) {
+            body {
+                background-color: pink;
+            }
+
+            .container li {
+                width: calc((100% - 20px) / 3);
+            }
+
+            .container li:last-child {
+                width: 100%;
+            }
+        }
+        @media all and (max-width:764px) {
+            body {
+                background-color: gold;
+            }
+
+            .btn-v {
+                display: flex;
+            }
+
+            .btn-close {
+                display: inline-block;
+            }
+
+            .gnb-container {
+                position: fixed;
+                right: -310px;
+                top: 0;
+                height: 100vh;
+                width: 300px;
+            }
+
+            .gnb-container ul {
+                flex-direction: column;
+            }
+        }
+        @media all and (max-width:480px) {
+            body {
+                background-color: orange;
+            }
+
+            .container ul {
+                flex-direction: column;
+            }
+
+            .container li {
+                width: 100%;
+            }
+
+            .container li:last-child {
+                width: 100%;
+            }
+        }
+        @media all and (max-width:375px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        /* break-point : 764, 480, 375 */
+

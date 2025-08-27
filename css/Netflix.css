@@ -34,8 +34,17 @@
     width: 148px;
  }
 
+ h3 {
+    font-size: 24px;
+ }
+
+ form h3 {
+    font-size: 1rem;
+ }
+
 .nav {
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 
@@ -99,6 +108,8 @@
 
 .input-container input {
     flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    
 }
 
 .input-container button {
@@ -123,8 +134,8 @@
     border-radius: 10px;
     padding: 12px 24px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
 }
 
@@ -133,9 +144,7 @@
     transition: 0.5s;
 }
 
-.banner h3 {
-    font-size: 1.25rem;
-}
+
 
 .banner h3 em {
     font-size: 600;
@@ -235,11 +244,16 @@
     inset: 0 auto auto 0;
 }
 
+/* 가입해야하는 또 다른 이유 */
+
 .reason-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 12px;
 }
+
+
 
 .reason-container ul {
     display: flex;
@@ -248,8 +262,48 @@
 }
 
 .reason-container li {
-   max-width: 1512px;
-    height: 200px;
-    outline: 1px solid gold;
+    max-width: 1512px;
+   
+    height: 300px;
+    
     background: url("../img/icons/sns_facebook.png") no-repeat right 10px bottom 15px/40px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    font-size: 1.25rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reason-container li p {
+    font-size: 16px;
+    color: #929292;
+}
+
+/* 자주 묻는 질문 */
+
+.qna-container .list li {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 24px;
+    margin: 0 0 3px 0;
+    gap: 5px;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+label .email-start input {
+    flex-grow: 1;
+    width: 500px;
+    height: 200px;
+    background-color: #1c1c1c;
 }
