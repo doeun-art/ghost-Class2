@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html,body {
+    width:100%;
+    overflow-x:hidden;
+   
+}
+body {
+    background-color: #d3d3d3;
+}
+
+.page-header {
+    color:#fff;
+    position:fixed;
+    left:0;right:0;top:0;
+}
+
+ 
+
+.page-header .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.nav ul {
+    display: flex;
+    gap: 100px;
+    color: #818181;
+}
+
+
+.main {
+    color: #fff;
+}
+
+.page-main {
+    border-radius: 0 0 300px 0;
+    height: 100vh;
+    background-color:#1c1c1c;
+}
+
+.page-main .cube {
+    max-width: 100%;   
+   
+    
+    position: absolute;
+    right: 60px;
+    bottom: 30px; 
+}
+
+.page-main .contents {
+    position:relative;
+    top: 30%;
+    left: 10%;
+}
+
+.contents img {
+    max-width: 900px;
+    width: 100%;
+    display: block;
+}
+
+.contents h2 {
+    font-size:30px;
+    font-weight: lighter;
+    margin-top: 30px;
+    color: #818181;
+}
+
+.contents p {
+    font-size: 20px;
+    margin-top: 10%;
+    font-weight: lighter;
+}
+
+.contents strong {
+    font-size: 50px;
+    font-weight:500;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*  */
+
+.contents-1 {
+   
+    max-width: 100%;
+    height: 100%;
+    background-color:#1c1c1c;
+    padding:100px 10% 10% 100px;
+    /* background-color: #1c1c1c; */
+   
+    border-radius: 300px 0 0 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.resume-container .resume-main {
+    display:flex;
+    gap:20px;align-items:center;
+}
+
+
+ .resume-container .thumb img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%; 
+    
+}
+
+.resume-container .thumb {
+    background-image: url("./img/portfolio/color.svg");
+    background-size: cover;
+    border: 1px solid red;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+
+.resume-main .profile em {
+    font-weight: bold; 
+}
+
+.resume-main  h2 {
+    font-size: 20px;
+    color: #d6d6d6;
+}
+
+.resume-main h2 strong {
+    font-size: 38px; 
+}
+
+
+
+.resume-main .profile strong {
+    font-size: 30px;
+    font-style: normal;
+}
+
+.resume-main .profile span {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: normal;
+    
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.resume-container .resume-sub {
+    max-width: 750px;
+    width: 100%; 
+    margin-bottom: 60px;
+}
+
+.resume-sub h4 {
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.resume-sub p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.resume-sub em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* career */
+
+.contents-1 {
+   
+}
+
+.career article {
+    margin-bottom: 30px;
+}
+
+.resume-container {
+    display: flex;
+}
+
+.career ul h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.career ul li {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* self-introduce */
+
+
+
+.self-introduce .introduce li {
+    width: px;
+    height: auto;
+    background-color:rgb(187, 187, 187);
+    border-radius: 20px;
+    padding: 24px;
+    margin: 0 auto;
+    gap: 5px;
+    font-size: 24px;
+    padding: 50px 100px;
+    transition: 0.4s;
+}
+
+/* work-container */
+
+body {
+
+}
+
+.work-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d56969;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4칸 그리드 */
+    grid-auto-rows: 200px; /* 기본 높이 */
+    gap: 15px; /* 칸 사이 여백 */
+    width: 90%;
+    border: 1px solid red;
+    max-width: 1000px;
+}
+
+.item {
+    background-color: #fe3131;
+    border-radius: 10px;
+}
+
+.item1 {
+    grid-column: span 3;
+}
+.item2 {
+    grid-column: span 1;
+}
+.item3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.item4 {
+    grid-column: span 3;
+}
+.item5 {
+    grid-column: span 2;
+}
+.item6 {
+    grid-column: span 1;
+}
